@@ -12,8 +12,8 @@ interface TableProps {
   currentPage: number;
   totalRecords: number;
   onPageChange: (event: DataTablePageEvent) => void;
-  selectedProducts: object[]; // Updated to object[]
-  setSelectedProducts: (value: object[]) => void; // Updated to object[]
+  selectedProducts: object[];
+  setSelectedProducts: (value: object[]) => void;
   rowsToSelect: number;
   setRowsToSelect: (value: number) => void;
 }
@@ -38,7 +38,7 @@ const CustomDataTable: React.FC<TableProps> = ({
       return;
     }
 
-    const selectedRows: object[] = []; // Updated to object[]
+    const selectedRows: object[] = []; 
     let currentPage = 1;
 
     try {
@@ -55,7 +55,7 @@ const CustomDataTable: React.FC<TableProps> = ({
         }
       }
 
-      setSelectedProducts(selectedRows); // Updated to object[]
+      setSelectedProducts(selectedRows); 
     } catch (error) {
       console.error("Error selecting rows:", error);
     } finally {
@@ -89,7 +89,7 @@ const CustomDataTable: React.FC<TableProps> = ({
   );
 
   const rowNumberTemplate = (_rowData: object, options: { rowIndex: number }) => {
-    return (currentPage - 1) + options.rowIndex + 1; // Corrected the calculation
+    return (currentPage - 1) + options.rowIndex + 1;
   };
 
   return (

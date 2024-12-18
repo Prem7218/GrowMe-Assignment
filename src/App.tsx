@@ -49,8 +49,8 @@ function App() {
           currentPage={currentPage}
           totalRecords={totalRecords}
           onPageChange={onPageChange}
-          selectedProducts={selectedProducts} // Updated to match type
-          setSelectedProducts={setSelectedProducts} // Updated to match type
+          selectedProducts={selectedProducts}
+          setSelectedProducts={setSelectedProducts}
           rowsToSelect={rowsToSelect}
           setRowsToSelect={setRowsToSelect}
         />
