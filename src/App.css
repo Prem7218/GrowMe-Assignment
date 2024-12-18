@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(171, 229, 252, 0.342);
+  color: white;
+  line-height: 1.5;
+}
+
+.app-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #6cb1f6;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.table-container {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.p-datatable {
+  border-radius: 12px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.8rem;
+  border-bottom: 2px solid #dee2e6;
+  text-transform: uppercase;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.p-datatable .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.p-datatable .p-paginator {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #9d7af8;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  border: solid 2px #6cb1f6;
+}
+
+button {
+  display: inline-flex;
+  border: solid 2px #6cb1f6;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 2px solid #dee2e6;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #6c757d;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a6268;
+  border-color: #ced4da;
+}
+
+button:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.overlay-content {
+  text-align: left;
+}
+
+.overlay-content h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.overlay-content input,
+.overlay-content button {
+  width: fit-content;
+  margin-top: 0.5rem;
+  border: solid 2px #6cb1f6;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1.5rem;
+  }
+
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .table-container {
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: solid 2px #6cb1f6;
+  }
+}
+
+.p-button-text {
+  margin-left: 10px;
+}
